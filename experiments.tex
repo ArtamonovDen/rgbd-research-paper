@@ -42,32 +42,34 @@
 %Таблчика с экспериментами
 
 \begin{center}
-    \begin{tabular}{ |c c|c|c|c|c|c|c|c|c| } 
-    \hline
-    \multirow{2}{*}{\rotatebox[origin=c]{90}{Датасет}} & \multirow{2}{*}{Метрика} & \multicolumn{4}{ |c| }{ResNet} & \multicolumn{4}{ |c| }{EfficientNet} \\
-     \cline{3-10}
-     & & BCE & focal & dice & IoU & BCE & focal & dice & IoU\\
-     \hline
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{NJU2K}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{NLPR}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{DES}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{SSD}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{STERE}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\   
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{LFSD}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\  
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{SIP}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\  
-     \multirow{2}{*}{\rotatebox[origin=c]{90}{DUT}} & mae $\downarrow$ &  & &  & &  & &  & \\
-      & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\  
-     \hline
-
-    %   \multirow{2}{*}{\rotatebox[origin=c]{90}{rota}}
-    \end{tabular}
+    \begin{table}
+        \begin{tabular}{ |c c|c|c|c|c|c|c|c|c| } 
+            \hline
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{Датасет}} & \multirow{2}{*}{Метрика} & \multicolumn{4}{ |c| }{ResNet} & \multicolumn{4}{ |c| }{EfficientNet} \\
+            \cline{3-10}
+            & & BCE & focal & dice & IoU & BCE & focal & dice & IoU\\
+            \hline
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{NJU2K}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{NLPR}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{DES}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{SSD}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{STERE}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\   
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{LFSD}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\  
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{SIP}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\  
+            \multirow{2}{*}{\rotatebox[origin=c]{90}{DUT}} & mae $\downarrow$ &  & &  & &  & &  & \\
+            & f1  $\uparrow$ & \textbf{0,920} & & & & & & &\\  
+            \hline
+        \end{tabular}
+    \caption{Эксперименты}
+    \label{tab:experiments}
+    \end{table}
 \end{center}
 
 
