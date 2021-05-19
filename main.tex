@@ -4,8 +4,10 @@
 \usepackage{csquotes}
 \usepackage{indentfirst}
 \usepackage[14pt]{extsizes} 
-
+\usepackage{graphicx} %package to manage images
 \usepackage{biblatex} %Imports biblatex package
+
+\graphicspath{{./img/experiments/}}
 \addbibresource{sample.bib} %Import the bibliography file
 \linespread{1.5} % 1.5 интервал
 
@@ -16,6 +18,6 @@
 \input{datasets}
 \input{sod-approaches}
 \input{nn}
+\input{experiments}
 \printbibliography
-
 \end{document}
