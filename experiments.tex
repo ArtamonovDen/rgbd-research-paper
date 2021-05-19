@@ -39,5 +39,24 @@
 
 
 
-% TODO: можно даже пример графика с лёнинг рейтом
+%Таблчика с экспериментами
+
+\begin{center}
+    \begin{tabular}{ |c c|c|c|c|c|c|c|c|c| } 
+    \hline
+    \multicolumn{10}{ |c| }{Эксперименты} \\
+    \hline
+    \multirow{2}{*}{\rotatebox[origin=c]{90}{Датасет}} & \multirow{2}{*}{Метрика} & \multicolumn{4}{ |c| }{ResNet} & \multicolumn{4}{ |c| }{EfficientNet} \\
+     \cline{3-10}
+     & & BCE & focal & dice & IoU & BCE & focal & dice & IoU\\
+     \hline
+     \multirow{2}{*}{\rotatebox[origin=c]{90}{DES}} & mae $\downarrow$ & 0,031 & & 0,017 & & 0,031 & & 0,017 & \\
+      & f1  $\uparrow$ & \textbf{0,920} & 0,930 & 0,855 & & 0,920 & 0,930 & 0,855 &\\
+     \hline
+
+    %   \multirow{2}{*}{\rotatebox[origin=c]{90}{rota}}
+    \end{tabular}
+\end{center}
+
+
 
