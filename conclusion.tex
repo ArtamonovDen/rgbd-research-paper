@@ -20,3 +20,8 @@
 В результате, полученные модели превзошли по метрикам $MAE$ и $F1$ взятую за основу модель BBS-Net из работы \cite{BBS}
 на каждом из датасетов. При этом, на половине датасетов модели на основе EfficientNet b-0 показали
 лучшие результаты по обеим метрикам и на датасете NJU2K - лучший результат по метрике $mae$.
+Несмотря на то, что модель EfficientNet b-0 имеет меньший размер, по сравнению с ResNet-50, время инференса
+модели BBS-Net на основе ResNet-50 меньше. Это может быть связано с особенностью реализации операций глубинных свёрток в Pytorch\footnote{\url{https://github.com/lukemelas/EfficientNet-PyTorch/issues/19}}
+\footnote{\url{https://github.com/pytorch/pytorch/issues/18631}}
+
+Исходный код модели, реализации функций потерь и метрик качества доступен в репозитории на Github: \href{https://github.com/ArtamonovDen/rgbd-research}{ArtamonovDen/rgbd-research}
